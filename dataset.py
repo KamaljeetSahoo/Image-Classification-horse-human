@@ -11,7 +11,7 @@ import torchvision.transforms as transforms
 
 
 
-def gwt_data(train_folder, test_folder):
+def get_data(train_folder, test_folder):
     
     transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 
