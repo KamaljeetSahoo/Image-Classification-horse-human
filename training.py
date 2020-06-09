@@ -37,7 +37,7 @@ print(' '.join('%5s' % classes[labels[j]] for j in range(1)))
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-net = Classifier(16, 32)
+net = Classifier(6, 16)
 net = net.train()
 net = net.to(device)
 
@@ -52,16 +52,16 @@ step = 0
 loss_train = []
 loss_val = []
 min_loss = 100
-patience = 5
+patience = 8
 training_loss_store = []
 validation_loss_store = []
 
-file = open('logs_test1_epoch1.txt', 'w')
+file = open('logs_test1_epoch30.txt', 'w')
 print('training started.............................................')
 file.write('training started.............................................\n')
 start_time = time.time()
 
-for epoch in range(1):  # loop over the dataset multiple times
+for epoch in range(30):  # loop over the dataset multiple times
     file.write('##############################TRAINING###############################\n')
     running_loss = 0.0
     for i, data in enumerate(train_loader, 0):
@@ -83,8 +83,8 @@ for epoch in range(1):  # loop over the dataset multiple times
 
         # print statistics
         running_loss += loss.item()
-        if i % 10 == 9:    # print every 2000 mini-batches
-            print('[%d, %5d] loss: %.3f' %(epoch + 1, i + 1, running_loss / 10))
+        if i % 100 == 99:    # print every 2000 mini-batches
+            print('[%d, %5d] loss: %.3f' %(epoch + 1, i + 1, running_loss / 100))
             file.write('epoch = '+ str(epoch + 1) + '\t' +'step = '+ str(step) +'\t'+'train_loss = '+'\t'+str(np.mean(loss_train)) +'\n')
             running_loss = 0.0
             loss_train = []
@@ -115,7 +115,7 @@ for epoch in range(1):  # loop over the dataset multiple times
             
             #save the best model
             #torch.save(net.state_dict(), "weight/" + "epoch_" + str(epoch+1) + "loss_" + str(val_loss) + ".pt")
-            torch.save(net.state_dict(), "weight/" + "epoch_" + str(epoch+1) + ".pt")
+            torch.save(net.state_dict(), "data/weight/" + "epoch_" + str(epoch+1) + ".pt")
             
             print('performance improved with validation loss ' + str(val_loss))
             file.write('--------------------------------------------------------------------\n')
@@ -148,8 +148,8 @@ file.close()
 if(torch.cuda.is_available()):
     torch.cuda.empty_cache()
 
-PATH = "weight_1st_test/epoch_1.pt"
-model = Classifier(16, 32)
+PATH = "data/weight/epoch_1.pt"
+model = Classifier(6, 16)
 state_dict = torch.load(PATH, map_location = 'cuda:0')
 model.load_state_dict(state_dict)
 model.eval()
@@ -176,14 +176,13 @@ correct = 0
 total = 0
 with torch.no_grad():
     for data in test_loader:
-        images, labels = data[0].cuda(), data[1].cuda()
+        images, labels = data[0].to(device), data[1].to(device)
         outputs = net(images)
-        _, predicted = torch.max(outputs, 1)
+        _, predicted = torch.max(outputs.data, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
-print('Accuracy of the network on the complete test loader: %d %%' % (
-    100 * correct / total))
+print('Accuracy of the network on the complete test loader: %d %%' % (100 * correct / total))
 
 class_correct = list(0. for i in range(2))
 class_total = list(0. for i in range(2))

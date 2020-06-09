@@ -1,0 +1,147 @@
+training started.............................................
+##############################TRAINING###############################
+epoch = 1	step = 100	train_loss = 	0.701531069278717
+epoch = 1	step = 200	train_loss = 	0.6787638700008393
+epoch = 1	step = 300	train_loss = 	0.6048287981748581
+epoch = 1	step = 400	train_loss = 	0.3890534821152687
+epoch = 1	step = 500	train_loss = 	0.4838871642947197
+epoch = 1	step = 600	train_loss = 	0.5608096536993981
+epoch = 1	step = 700	train_loss = 	0.6901502028107643
+epoch = 1	step = 800	train_loss = 	0.7006046772003174
+epoch = 1	step = 900	train_loss = 	0.6708014020323754
+epoch = 1	step = 1000	train_loss = 	0.5891080966591835
+Finished training for epoch 0 time taken = 24.771674394607544
+##################################evaluation##############################
+--------------------------------------------------------------------
+performance improved with validation loss =  tensor(0.4851, device='cuda:0')
+epoch = 1	step = 1283	val_loss = 	0.48506326717324555
+--------------------------------------------------------------------
+
+##############################TRAINING###############################
+epoch = 2	step = 1383	train_loss = 	0.5309388189334568
+epoch = 2	step = 1483	train_loss = 	0.4296760395169258
+epoch = 2	step = 1583	train_loss = 	0.37888374775648115
+epoch = 2	step = 1683	train_loss = 	0.4456463369727135
+epoch = 2	step = 1783	train_loss = 	0.40701325476169586
+epoch = 2	step = 1883	train_loss = 	0.4528367307782173
+epoch = 2	step = 1983	train_loss = 	0.4457905408740044
+epoch = 2	step = 2083	train_loss = 	0.34497113287448883
+epoch = 2	step = 2183	train_loss = 	0.3270834103226662
+epoch = 2	step = 2283	train_loss = 	0.31689502209424975
+Finished training for epoch 1 time taken = 50.17857646942139
+##################################evaluation##############################
+no improvement with prev best model 1th 
+##############################TRAINING###############################
+epoch = 3	step = 2666	train_loss = 	0.19948997765075505
+epoch = 3	step = 2766	train_loss = 	0.1630261579155922
+epoch = 3	step = 2866	train_loss = 	0.2957524836063385
+epoch = 3	step = 2966	train_loss = 	0.18935689747333526
+epoch = 3	step = 3066	train_loss = 	0.1490134173631668
+epoch = 3	step = 3166	train_loss = 	0.4209394747018814
+epoch = 3	step = 3266	train_loss = 	0.1286340492963791
+epoch = 3	step = 3366	train_loss = 	0.13268138319253922
+epoch = 3	step = 3466	train_loss = 	0.19369521051645278
+epoch = 3	step = 3566	train_loss = 	0.1918242657184601
+Finished training for epoch 2 time taken = 76.61960697174072
+##################################evaluation##############################
+no improvement with prev best model 2th 
+##############################TRAINING###############################
+epoch = 4	step = 3949	train_loss = 	0.20347605892053738
+epoch = 4	step = 4049	train_loss = 	0.1540241439640522
+epoch = 4	step = 4149	train_loss = 	0.2149543896317482
+epoch = 4	step = 4249	train_loss = 	0.14102050721645354
+epoch = 4	step = 4349	train_loss = 	0.07256071418523788
+epoch = 4	step = 4449	train_loss = 	0.28005858182907106
+epoch = 4	step = 4549	train_loss = 	0.18426008373498917
+epoch = 4	step = 4649	train_loss = 	0.13691533118486404
+epoch = 4	step = 4749	train_loss = 	0.07877965718507766
+epoch = 4	step = 4849	train_loss = 	0.059757888317108154
+Finished training for epoch 3 time taken = 109.81611728668213
+##################################evaluation##############################
+no improvement with prev best model 3th 
+##############################TRAINING###############################
+epoch = 5	step = 5232	train_loss = 	0.01539283779662425
+epoch = 5	step = 5332	train_loss = 	0.007234890460968018
+epoch = 5	step = 5432	train_loss = 	0.012720021009445191
+epoch = 5	step = 5532	train_loss = 	0.02451521098613739
+epoch = 5	step = 5632	train_loss = 	0.004497185945510864
+epoch = 5	step = 5732	train_loss = 	0.0021986544132232668
+epoch = 5	step = 5832	train_loss = 	0.9267177891731262
+epoch = 5	step = 5932	train_loss = 	0.41138420343399046
+epoch = 5	step = 6032	train_loss = 	0.4158277240395546
+epoch = 5	step = 6132	train_loss = 	0.3486790907382965
+Finished training for epoch 4 time taken = 142.24747776985168
+##################################evaluation##############################
+no improvement with prev best model 4th 
+##############################TRAINING###############################
+epoch = 6	step = 6515	train_loss = 	0.16584734325333844
+epoch = 6	step = 6615	train_loss = 	0.07969589769840241
+epoch = 6	step = 6715	train_loss = 	0.008072730302810669
+epoch = 6	step = 6815	train_loss = 	0.021030123829841613
+epoch = 6	step = 6915	train_loss = 	0.0033711516857147217
+epoch = 6	step = 7015	train_loss = 	0.0032621824741363523
+epoch = 6	step = 7115	train_loss = 	0.14838349759578706
+epoch = 6	step = 7215	train_loss = 	0.11357194870710373
+epoch = 6	step = 7315	train_loss = 	0.0316307944059372
+epoch = 6	step = 7415	train_loss = 	0.040226246118545535
+Finished training for epoch 5 time taken = 160.62764501571655
+##################################evaluation##############################
+no improvement with prev best model 5th 
+##############################TRAINING###############################
+epoch = 7	step = 7798	train_loss = 	0.5689014358314004
+epoch = 7	step = 7898	train_loss = 	0.1047746741771698
+epoch = 7	step = 7998	train_loss = 	0.013866458535194397
+epoch = 7	step = 8098	train_loss = 	0.03259733617305756
+epoch = 7	step = 8198	train_loss = 	0.05117027521133423
+epoch = 7	step = 8298	train_loss = 	0.17495306372642516
+epoch = 7	step = 8398	train_loss = 	0.03233096361160279
+epoch = 7	step = 8498	train_loss = 	0.008370532989501953
+epoch = 7	step = 8598	train_loss = 	0.003039820194244385
+epoch = 7	step = 8698	train_loss = 	0.05041704505681992
+Finished training for epoch 6 time taken = 178.3577516078949
+##################################evaluation##############################
+no improvement with prev best model 6th 
+##############################TRAINING###############################
+epoch = 8	step = 9081	train_loss = 	0.16083313348725087
+epoch = 8	step = 9181	train_loss = 	0.062450607419013975
+epoch = 8	step = 9281	train_loss = 	0.006453363299369812
+epoch = 8	step = 9381	train_loss = 	0.0035447031259536743
+epoch = 8	step = 9481	train_loss = 	0.0019417434930801391
+epoch = 8	step = 9581	train_loss = 	0.0019208014011383057
+epoch = 8	step = 9681	train_loss = 	0.0059777706861495975
+epoch = 8	step = 9781	train_loss = 	0.0012561118602752686
+epoch = 8	step = 9881	train_loss = 	0.0005020129680633544
+epoch = 8	step = 9981	train_loss = 	7.79557228088379e-05
+Finished training for epoch 7 time taken = 196.39967823028564
+##################################evaluation##############################
+no improvement with prev best model 7th 
+##############################TRAINING###############################
+epoch = 9	step = 10364	train_loss = 	0.00038403976620651607
+epoch = 9	step = 10464	train_loss = 	0.00026597023010253905
+epoch = 9	step = 10564	train_loss = 	0.0005174303054809571
+epoch = 9	step = 10664	train_loss = 	0.0003654229640960693
+epoch = 9	step = 10764	train_loss = 	0.0004077816009521484
+epoch = 9	step = 10864	train_loss = 	0.0002465629577636719
+epoch = 9	step = 10964	train_loss = 	0.00010170221328735351
+epoch = 9	step = 11064	train_loss = 	3.98564338684082e-05
+epoch = 9	step = 11164	train_loss = 	5.9468746185302736e-05
+epoch = 9	step = 11264	train_loss = 	2.4173259735107422e-05
+Finished training for epoch 8 time taken = 214.69238018989563
+##################################evaluation##############################
+no improvement with prev best model 8th 
+##############################TRAINING###############################
+epoch = 10	step = 11647	train_loss = 	0.00010515010263037494
+epoch = 10	step = 11747	train_loss = 	0.0001374828815460205
+epoch = 10	step = 11847	train_loss = 	2.6526451110839845e-05
+epoch = 10	step = 11947	train_loss = 	0.0001376175880432129
+epoch = 10	step = 12047	train_loss = 	0.00015082836151123047
+epoch = 10	step = 12147	train_loss = 	0.00017573118209838868
+epoch = 10	step = 12247	train_loss = 	7.037401199340821e-05
+epoch = 10	step = 12347	train_loss = 	3.434896469116211e-05
+epoch = 10	step = 12447	train_loss = 	8.943557739257813e-05
+epoch = 10	step = 12547	train_loss = 	3.0956268310546876e-05
+Finished training for epoch 9 time taken = 232.59451460838318
+##################################evaluation##############################
+no improvement with prev best model 9th 
+stop trainingFinished Training................................................
+Training time:- 234.65409874916077
